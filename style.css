@@ -15,8 +15,6 @@ input {
 
 body {
   font-family: "Inter", sans-serif;
-  overflow-x: hidden;
-  overflow-x: -webkit-hidden;
 }
 
 :root {
@@ -111,6 +109,10 @@ header {
 .container {
   width: min(1130px, 100% - 2rem);
   margin-inline: auto;
+  overflow: hidden;
+  overflow: -webkit-hidden;
+  -ms-overflow: hidden;
+  overflow: hidden \9;
 }
 
 nav ul {
@@ -587,6 +589,10 @@ nav ul>li:not(:last-child)::after {
   border-radius: 18px;
 }
 
+.services--section {
+  z-index: 999;
+}
+
 /* --- services section end --- */
 
 /* --- Media Queries --- */
@@ -596,6 +602,10 @@ nav ul>li:not(:last-child)::after {
     grid-template-columns: repeat(2, 200px) repeat(3, 100px);
     grid-template-rows: 300px 250px;
     gap: 10px;
+  }
+
+  .services--content {
+    height: 1000px;
   }
 
   .img--three {
@@ -629,6 +639,10 @@ nav ul>li:not(:last-child)::after {
   .grid {
     transform: translateX(-30px);
     gap: 10px;
+  }
+
+  .mob--container {
+    width: 100%;
   }
 
   .grid {
@@ -722,6 +736,12 @@ nav ul>li:not(:last-child)::after {
   }
 
   .content--plans {
+    height: 1700px;
+  }
+}
+
+@media (max-width: 600px) {
+  .services--content {
     height: 1700px;
   }
 }
