@@ -494,7 +494,7 @@ nav ul>li:not(:last-child)::after {
 
 .price--card-two::before {
   content: '';
-  background: url(./images/🎨\ Wiggle.svg);
+  background: url(wiggle.svg);
   height: 100px;
   width: 200px;
   position: absolute;
