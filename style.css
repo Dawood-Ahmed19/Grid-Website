@@ -449,7 +449,7 @@ nav ul>li:not(:last-child)::after {
   gap: 25px;
 }
 
-.card--features ul>li>a {
+.card--features ul>li>span {
   padding: 8px 9px;
   background-color: var(--gray-soft);
   border-radius: 50%;
@@ -469,11 +469,11 @@ nav ul>li:not(:last-child)::after {
   height: 50%;
 }
 
-.card--features .list--two>li>a {
+.card--features .list--two>li>span {
   background-color: var(--arylide-yellow);
 }
 
-.card--features .list--three>li>a {
+.card--features .list--three>li>span {
   background-color: var(--green-light);
 }
 
@@ -551,22 +551,22 @@ nav ul>li:not(:last-child)::after {
   height: 50%;
 }
 
-.service--img>a {
+.service--img>span {
   background-color: var(--pink-dark);
   padding: 14px 16px;
   color: var(--white);
   border-radius: 100vmax;
 }
 
-.service--img>a.img-two {
+.service--img>span.img-two {
   background-color: var(--blue-dark);
 }
 
-.service--img>a.img-three {
+.service--img>span.img-three {
   background-color: var(--purple-dark);
 }
 
-.service--img>a.img--four {
+.service--img>span.img--four {
   background-color: var(--green-dark);
 }
 
@@ -718,7 +718,7 @@ nav ul>li:not(:last-child)::after {
     font-size: 20px;
   }
 
-  .card--features ul>li>a {
+  .card--features ul>li>span {
     padding: 4px 5px;
   }
 
