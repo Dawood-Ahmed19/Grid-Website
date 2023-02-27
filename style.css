@@ -16,6 +16,7 @@ input {
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
+  overflow-x: -webkit-hidden;
 }
 
 :root {
