@@ -129,8 +129,9 @@ nav ul {
   display: none;
 }
 
-.toggle--nav>a {
+.toggle--nav>span {
   padding: 10px;
+  margin-inline-start: 10px;
 }
 
 .logo>h1 {
