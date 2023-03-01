@@ -13,6 +13,16 @@ input {
   font: inherit;
 }
 
+::-moz-selection {
+  background-color: var(--purple-dark);
+  color: var(--purple-light);
+}
+
+::selection {
+  background-color: var(--purple-dark);
+  columns: var(--purple-light);
+}
+
 body {
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
@@ -87,6 +97,20 @@ body {
   padding: 1em 2.5em;
   cursor: pointer;
   border-radius: 100vmax;
+}
+
+.service-button button.btn--learn__more:hover,
+.service-button button.btn--learn__more:focus {
+  background-color: var(--purple-dark);
+  color: var(--white);
+  transition: 0.3s;
+}
+
+.btn__buy:hover,
+.btn__buy:focus {
+  background-color: var(--purple-dark);
+  color: var(--white);
+  transition: 0.3s;
 }
 
 /* --- header --- */
@@ -485,6 +509,12 @@ nav ul>li:not(:last-child)::after {
   padding-inline: 4.3em;
 }
 
+.card--two button:hover,
+.card--two button:focus {
+  background-color: var(--white);
+  color: var(--purple-dark);
+}
+
 .card--three button {
   padding-inline: 4rem;
 }
@@ -655,7 +685,8 @@ nav ul>li:not(:last-child)::after {
   cursor: pointer;
 }
 
-.column-01 .contact--socials>ul>li>a:hover {
+.column-01 .contact--socials>ul>li>a:hover,
+.column-01 .contact--socials>ul>li>a:focus {
   background-color: var(--yellow-light);
   transition: 0.5s;
 }
@@ -770,7 +801,15 @@ button[type="submit"] {
   grid-row: 2;
   grid-column: 2;
   width: 70%;
+  border: 1px solid var(--gray-light);
   justify-self: end;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: var(--white);
+  color: var(--purple-dark);
+  transition: 0.3s;
 }
 
 input#name {
