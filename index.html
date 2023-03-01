@@ -13,39 +13,46 @@
 </head>
 
 <body>
-  <header class="nav--header container">
+  <header class="nav--header">
+    <div class="nav--container">
+      <div class="logo">
+        <h1><i class="fa-solid fa-grip-vertical"></i>Grid</h1>
+      </div>
 
-    <div class="logo">
-      <h1><i class="fa-solid fa-grip-vertical"></i>Grid</h1>
-    </div>
+      <nav class="navbar--main">
+        <ul type="none" class="nav--list">
+          <li class="nav--item"><a href="#hero-section" class="nav--link">Who we are</a></li>
+          <li class="nav--item"><a href="#plan-section" class="nav--link">How it works</a></li>
+          <li class="nav--item"><a href="#services-section" class="nav--link">What we do</a></li>
+          <li class="nav--item"><a href="#contact-section" class="nav--link">Contact us</a></li>
+        </ul>
+      </nav>
 
-    <nav class="navbar--main">
-      <ul type="none" class="nav--list">
-        <li class="nav--item"><a class="nav-link active" href="#">Who we are</a></li>
-        <li class="nav--item"><a href="#" class="nav--link">How it works</a></li>
-        <li class="nav--item"><a href="#" class="nav--link">What we do</a></li>
-        <li class="nav--item"><a href="#" class="nav--link">Contact us</a></li>
-      </ul>
-      <div class="sign--in mobile--nav">
+
+      <div class="sign--in">
         <button class="btn__sign--in" type="button">Sign In</button>
       </div>
-    </nav>
 
-    <div class="sign--in desktop--nav">
-      <button class="btn__sign--in" type="button">Sign In</button>
+
+
+      <div class="toggle--nav">
+        <span id="nav--icon"><i id="fa-icon" class="fa-solid fa-bars-staggered"></i></span>
+      </div>
     </div>
-
-
-
-    <div class="toggle--nav">
-      <span><i class="fa-solid fa-bars-staggered"></i></span>
-    </div>
-
   </header>
+
+  <nav id="nav" class="navbar--main column--nav">
+    <ul type="none" class="nav--list">
+      <li class="nav--item"><a href="#hero-section" class="nav--link">Who we are</a></li>
+      <li class="nav--item"><a href="#plan-section" class="nav--link">How it works</a></li>
+      <li class="nav--item"><a href="#services-section" class="nav--link">What we do</a></li>
+      <li class="nav--item"><a href="#contact-section" class="nav--link">Contact us</a></li>
+    </ul>
+  </nav>
 
   <!-- //Section one -->
 
-  <section class="main--section">
+  <section id="hero-section" class="main--section">
     <div class="container mob--container">
       <div class="content--main">
 
@@ -99,7 +106,7 @@
 
   <!-- //section two -->
 
-  <section class="plan--section">
+  <section id="plan-section" class="plan--section">
     <div class="container">
 
       <div class="content--plans">
@@ -207,7 +214,7 @@
         </div>
   </section>
 
-  <section class="services--section">
+  <section id="services-section" class="services--section">
 
     <div class="container">
       <div class="services--content">
@@ -346,7 +353,7 @@
   <!-- //section three -->
 
 
-  <section>
+  <section id="contact-section">
     <div class="container">
       <div class="content--contact">
 
@@ -368,7 +375,8 @@
                 <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
                 <li><a href="https://github.com/Dawood-Ahmed19" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </li>
-                <li><a href="https://twitter.com/DawoodAhmed_19" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://twitter.com/DawoodAhmed_19" target="_blank"><i
+                      class="fa-brands fa-twitter"></i></a></li>
               </ul>
             </div>
 
@@ -442,12 +450,13 @@
 
             <div class="contact--form">
               <form>
-                
+
                 <input placeholder="Your name" type="text" id="name" name="name" required>
 
                 <input placeholder="Your email" type="email" id="email" name="email" required>
-                
-                <textarea class="message-area" placeholder="Leave your message here" id="message" name="message" required></textarea>
+
+                <textarea class="message-area" placeholder="Leave your message here" id="message" name="message"
+                  required></textarea>
 
                 <button type="submit">Submit</button>
               </form>
@@ -468,6 +477,9 @@
   <!-- //section three // end -->
 
   <!-- Js link -->
+
+  <script src="scrollFunction.js"></script>
+  <script src="toggleNav.js"></script>
 </body>
 
 </html>
