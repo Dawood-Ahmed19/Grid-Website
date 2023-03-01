@@ -600,6 +600,7 @@ nav ul>li:not(:last-child)::after {
 
 .service--img>span.img-three {
   background-color: var(--purple-dark);
+  padding-inline: 18px;
 }
 
 .service--img>span.img--four {
