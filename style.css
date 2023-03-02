@@ -927,6 +927,10 @@ textarea.message-area {
     display: flex;
     justify-content: center;
   }
+
+  .row>ul {
+    text-align: center;
+  }
 }
 
 @media (max-width: 790px) {
@@ -995,6 +999,7 @@ textarea.message-area {
   .content--main>.main--heading>h1>span::after {
     height: 20px;
   }
+
 }
 
 @media (max-width: 400px) {
